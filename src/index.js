@@ -1,3 +1,20 @@
+/**
+ * index.js
+ *
+ * React アプリのエントリーポイント（入口ファイル）です。
+ * 
+ * 役割：
+ * - App.js を読み込み、ブラウザの DOM にレンダリングします
+ * - React アプリの「起点」となるファイルです
+ *
+ * 主な内容：
+ * - ReactDOM.createRoot() を使って root 要素に描画
+ * - <React.StrictMode> で開発モードの警告を検出
+ *
+ * 補足：
+ * - reportWebVitals.js や setupTests.js は必要な場合だけ import
+ * - このファイル自体は削除しないでください
+ */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

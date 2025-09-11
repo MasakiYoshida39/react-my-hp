@@ -1,3 +1,14 @@
+/**
+ * index.css
+ *
+ * アプリ全体のグローバルスタイルを定義するファイルです。
+ * 
+ * ここで設定したスタイルは、すべてのコンポーネントに影響します。
+ * 例：
+ * - body の余白リセット
+ * - フォント設定
+ * - HTML の基本要素（h1, p, a など）の共通スタイル
+ */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
