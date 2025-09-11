@@ -1,3 +1,11 @@
+# 個人メモ
+起動方法
+npm install　パッケージインストール
+npm start　開発サーバー起動
+Local: http://localhost:3000
+アクセス先
+
+
 # React My HP
 
 React を使って作成した個人用ホームページです。AWS S3 へデプロイ予定です。
