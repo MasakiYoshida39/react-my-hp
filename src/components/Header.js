@@ -3,11 +3,9 @@ import React from 'react';
 function Header() {
     return (
         <header className="header">
-            <h1>私のホームページ</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <h1>画像</h1>
+            <h1>タイトルを入れる</h1>
+
         </header>
     );
 }

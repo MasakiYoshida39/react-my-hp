@@ -6,9 +6,7 @@ function Home() {
     return (
         <div>
             <Main />
-            <Link to="/profile">
-                <button>プロフィールを見る</button>
-            </Link>
+
         </div>
     );
 }
