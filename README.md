@@ -1,4 +1,17 @@
 # 個人メモ
+起動の仕組み
+ブラウザ
+   │
+   ▼
+index.js
+   │  (React アプリ起動)
+   ▼
+App.js
+   │  (ルーティング + 共通コンポーネント表示)
+   ▼
+Header / Footer
+Routes ──> Home  または Profile
+
 起動方法
 npm install　パッケージインストール
 npm start　開発サーバー起動

@@ -21,7 +21,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import './App.css';
-
+//再利用のためにプロフィールを配置
 function App() {
   const userProfile = {
     name: "Masaki Yoshida",
