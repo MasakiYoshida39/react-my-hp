@@ -16,6 +16,7 @@
  * - 通常のホームページや SPA を作るだけなら不要
  * - テストを書く場合のみ残して活用します
  */
+import Profile from './Profile';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 

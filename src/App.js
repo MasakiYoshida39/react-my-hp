@@ -13,21 +13,41 @@
  * - デザインやレイアウトは App.css で調整
  * - アプリ全体の土台として機能
  */
+
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Main from './components/Main';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
 import './App.css';
 
 function App() {
+  const userProfile = {
+    name: "Masaki Yoshida",
+    username: "masa123",
+    bio: "React と Web 開発が好きです。",
+    avatar: "https://example.com/avatar.jpg",
+    email: "",
+    twitter: "",
+    skills: ["React", "JavaScript", "CSS"]
+  };
+
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          {/* ホーム画面 */}
+          <Route path="/" element={<Home />} />
+
+          {/* プロフィール画面 */}
+          <Route path="/profile" element={<Profile user={userProfile} />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
 export default App;
-
