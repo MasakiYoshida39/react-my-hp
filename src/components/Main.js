@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Main() {
     return (
+
         <main className="main">
             <section id="about">
                 <h2>About</h2>
@@ -12,8 +14,16 @@ function Main() {
                 <h2>Contact</h2>
                 <p>連絡先やお問い合わせ情報をここに書きます。</p>
             </section>
+
+            <div>
+                <Main />
+                <Link to="/profile">
+                    <button>プロフィールを見る</button>
+                </Link>
+            </div>
         </main>
     );
+
 }
 
 export default Main;

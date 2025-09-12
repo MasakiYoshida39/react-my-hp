@@ -16,12 +16,10 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import './App.css';
-//再利用のためにプロフィールを配置
+
 function App() {
   const userProfile = {
     name: "Masaki Yoshida",
@@ -35,17 +33,10 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <Header />
-        <Routes>
-          {/* ホーム画面 */}
-          <Route path="/" element={<Home />} />
-
-          {/* プロフィール画面 */}
-          <Route path="/profile" element={<Profile user={userProfile} />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile user={userProfile} />} />
+      </Routes>
     </Router>
   );
 }
