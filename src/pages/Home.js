@@ -6,9 +6,6 @@ function Home({ user }) {
     return (
         <div>
             <Main user={user} />
-            <Link to="/profile">
-                <button>プロフィールを見る</button>
-            </Link>
         </div>
     );
 }

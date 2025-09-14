@@ -20,7 +20,7 @@ function Main({ user }) { // ← ここで props を受け取る
 
                 <div>
                     <Link to="/profile">
-                        <button>プロフィールを見る</button>
+                        <button>プロフィール詳細</button>
                     </Link>
                 </div>
             </section>
