@@ -9,7 +9,6 @@ function Profile({ user }) {
 
             {/* 2. 名前・ユーザー名・自己紹介 */}
             <h1>{user.name}</h1>
-
             <p>{user.bio}</p>
             {user.catchphrase && <p className="catchphrase">{user.catchphrase}</p>}
 

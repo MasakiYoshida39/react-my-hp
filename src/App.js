@@ -33,6 +33,7 @@ function App() {
 
     // 2. 自己紹介
     name: "Masaki Yoshida",
+
     bio: "Webエンジニア／React・Spring Boot勉強中／趣味は麺料理とゲーム",
     catchphrase: "",
 
@@ -58,7 +59,7 @@ function App() {
         <Header />
         <Routes>
           {/* ホーム画面 */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home user={userProfile} />} />
 
           {/* プロフィール画面 */}
           <Route path="/profile" element={<Profile user={userProfile} />} />
