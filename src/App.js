@@ -21,16 +21,35 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import './App.css';
-//再利用のためにプロフィールを配置
+
 function App() {
+  // ユーザープロフィール情報
   const userProfile = {
-    name: "Masaki Yoshida",
-    username: "masa123",
-    bio: "React と Web 開発が好きです。",
-    avatar: "https://example.com/avatar.jpg",
+    // 1. 写真／アイコン・居住地・連絡先
+    avatar: "https://example.com/avatar.jpg", // 顔出ししない場合はアイコンでもOK
+    location: "東京都", // 任意
     email: "",
     twitter: "",
-    skills: ["React", "JavaScript", "CSS"]
+
+    // 2. 自己紹介
+    name: "Masaki Yoshida",
+    bio: "Webエンジニア／React・Spring Boot勉強中／趣味は麺料理とゲーム",
+    catchphrase: "",
+
+    // 3. 経歴・スキル
+    education: "ものつくり大学 大学技能工芸学部 2018年卒",
+    workExperience: [
+      "(2018年4月〜2019年10月) 建築部品 技術部・製造部",
+      "(2019年10月〜2023年11月) 自動車部品 技術部・製造部",
+      "(2024年6月〜現在) 正社員"
+    ],
+    skills: ["React", "JavaScript", "CSS", "Ruby", "MySQL", "PostgreSQL"],
+    certifications: [""],
+
+    // 4. 興味・活動
+    hobbies: ["ゲーム", "プログラミング"],
+    projects: ["本を自動で選んでくれるアプリ"],
+    socialActivities: ["ブログ更新中", "GitHub にコード公開"]
   };
 
   return (
