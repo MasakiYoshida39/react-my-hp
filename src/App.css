@@ -13,11 +13,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.header {
-  background-color: #4caf50;
-  color: white;
-  padding: 1rem;
-}
+
 
 .header nav a {
   color: white;

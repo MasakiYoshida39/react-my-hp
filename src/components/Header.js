@@ -1,11 +1,11 @@
 import React from 'react';
+import './Header.css'; // ← 追加！
 
 function Header() {
     return (
         <header className="header">
-            <h1>画像</h1>
-            <h1>タイトルを入れる</h1>
-
+            <h1 className="header-logo">🖼 画像</h1>
+            <h1 className="header-title">タイトルを入れる</h1>
         </header>
     );
 }
