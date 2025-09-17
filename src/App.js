@@ -26,8 +26,9 @@ function App() {
   // ユーザープロフィール情報
   const userProfile = {
     // 1. 写真／アイコン・居住地・連絡先
-    avatar: "https://example.com/avatar.jpg", // 顔出ししない場合はアイコンでもOK
-    location: "東京都", // 任意
+    avatar: require('./assets/avatar.png'), // src/assets/avatar.png を使う場合
+
+    location: "埼玉県", // 任意
     email: "",
     twitter: "",
 
@@ -44,13 +45,14 @@ function App() {
       "(2019年10月〜2023年11月) 自動車部品 技術部・製造部",
       "(2024年6月〜現在) 正社員"
     ],
-    skills: ["React", "JavaScript", "CSS", "Ruby", "MySQL", "PostgreSQL"],
-    certifications: [""],
+    skills: ["React", "JavaScript", "Ruby", "MySQL",],
 
     // 4. 興味・活動
-    hobbies: ["ゲーム", "プログラミング"],
-    projects: ["本を自動で選んでくれるアプリ"],
-    socialActivities: ["ブログ更新中", "GitHub にコード公開"]
+    hobbies: ["ゲーム", "サッカー観戦", "F1観戦"],
+    projects: ["本を自動で選んでくれるアプリ（Java）"],
+    certifications: ["Java SE 11 Programmer I", "AWS Certified Cloud Practitioner"],
+
+    socialActivities: ["ブログ更新中", "GitHub : https://github.com/MasakiYoshida39"]
   };
 
   return (

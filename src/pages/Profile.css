@@ -1,0 +1,119 @@
+/* コンテナ全体 */
+.profile-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(150, 150, 255, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* プロフィール画像 */
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.08);
+}
+
+/* 名前・自己紹介 */
+h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* キャッチフレーズ（特別強調） */
+.catchphrase {
+    font-style: italic;
+    color: #87cefa;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* セクション（職歴、スキルなど） */
+.experience,
+.skills,
+.certifications,
+.hobbies,
+.projects,
+.social-activities {
+    margin-top: 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 8px rgba(150, 150, 255, 0.1);
+}
+
+/* セクションタイトル */
+h3 {
+    color: #e0e0ff;
+    margin-bottom: 8px;
+    text-shadow: 0 0 6px rgba(150, 150, 255, 0.5);
+}
+
+/* リスト */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 6px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #8e2de2;
+    font-size: 0.8rem;
+}
+
+/* 連絡先 */
+.contact {
+    margin: 10px 0;
+}
+
+.contact a {
+    color: #87cefa;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #00bfff;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

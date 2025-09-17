@@ -8,26 +8,85 @@
  * - App コンポーネントの div やセクションのレイアウト
  * - 背景色や文字色などの見た目
  */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+/* App全体のスタイル */
+.App {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a2e, #16213e);
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeIn 1s ease-in-out;
 }
 
+/* セクション共通 */
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+/* 見出し */
+h1,
+h2,
+h3 {
+  color: #e0e0ff;
+  text-shadow: 0 0 8px rgba(150, 150, 255, 0.4);
+  margin-bottom: 12px;
+}
 
-.header nav a {
+/* プロフィール画像 */
+img {
+  display: block;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* プロフィールボタン */
+button {
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
   color: white;
-  margin: 0 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(142, 45, 226, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(142, 45, 226, 0.9);
+}
+
+/* Contactリンク */
+a {
+  color: #87cefa;
   text-decoration: none;
 }
 
-.main {
-  padding: 2rem;
+a:hover {
+  text-decoration: underline;
+  color: #00bfff;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+/* フェードインアニメーション */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

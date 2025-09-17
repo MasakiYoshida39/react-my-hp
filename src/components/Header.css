@@ -26,11 +26,18 @@
     pointer-events: none;
 }
 
+/* ロゴ文字 */
 .header-logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #ffdd57;
-    /* ゴールドっぽい色でロゴを目立たせる */
+    background: linear-gradient(90deg, #00d4ff, #4facff, #1e90ff);
+    /* 青系グラデーション */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+    display: inline-block;
+    animation: glow 2s infinite alternate;
 }
 
 .header-title {
